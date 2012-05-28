@@ -4,6 +4,7 @@ bostonrb-examples
 This repo contains a stub of a Ruby On Rails application as well 
 as some exercises for a beginner to attempt. By following the 
 instructions on this page, you will see examples of:
+
 -cloning into an existing code repository with git
 -using rails helper functions to format the display of information
  on your web page
