@@ -51,3 +51,12 @@ application as defined in the Gemfile.  The next command,
 `rake db:migrate`, runs the database migrations within db/migrations.
 In short, it creates a database with tables that your application
 can store data into.
+
+At this point, your local environment should be ready to run your
+web application.  We're going to start up our local server, and then
+direct our browser to look at that server.  In your terminal, type
+`rails server`.  This command starts up a server, and dumps the
+output into the terminal as you use the server.  In your favorite
+browser, go to the address `0.0.0.0:3000`, as if it were a web 
+address like http://www.google.com.  You should see the stub of an
+application to be used for 
