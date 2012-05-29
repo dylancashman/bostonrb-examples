@@ -163,4 +163,40 @@ Adding in Twitter
 -----------------
 
 Your client has been hearing a ton about social networking, and now
-wants to include their twitter account
+wants to include their twitter account on the index.  Luckily, there's
+a gem that makes it very easy to access the Application Programming 
+Interface (API) for Twitter from within a Ruby application.  To add
+the Twitter gem to the application, open up the file called Gemfile
+in the root of your application folder with your text editor and add
+the line `gem 'twitter'`.  Then, in your terminal, run the `bundle`
+command.  You have now successfully marked the twitter gem as a
+dependency in your application and installed it.
+
+You can look at the documentation for the twitter gem at its 
+[documentation page](http://twitter.rubyforge.org/).  One feature 
+you might want to try is to display your client's most recent tweet
+on their index page.  From the API documentation, we could use the
+following code:
+
+    Twitter.user_timeline("bostonrb").first.text
+    
+If you don't have your own twitter to try with, feel free to use 
+@bostonrb, like the line above.
+
+Deploying to Heroku
+-------------------
+
+Your client is really happy, and you've really helped them out.  
+However, they're sick of looking over your shoulder to view the
+website.  This is where [Heroku](http://www.heroku.com/) comes in.
+
+Heroku is a 'cloud application platform' that greatly simplifies
+the workflow to deploying to a publicly-facing website.  There is a
+start-up guide we'll be using, but before you start that, you'll
+need to [create a Heroku login](https://api.heroku.com/signup).  Be
+sure to read the terms and agreement involved in creating an account.
+Once that is done, you should be ready to follow the 
+[start-up guide.](https://devcenter.heroku.com/articles/rails3) This
+guide assumes that you don't already have an app, so please
+skip the steps entitled "Write Your App" and "Store Your App in Git,"
+as both of those should already be accomplished.  
